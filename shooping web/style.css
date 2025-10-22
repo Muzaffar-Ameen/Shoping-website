@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+}
+  
+/* 
+.Header{
+    
+     background-color: rgb(0, 217, 255);
+     height: 400px;
+     width: 100%;
+     display: flex;
+    justify-content: space-between;
+    border: 2px solid green;
+} */
+.Homenav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:40px;
+   
+    /* border: 5px solid green; */
+
+    
+   
+}
+header{
+    height: 600px;
+    /* background-color: rgb(0, 217, 255); */
+    background-image: url('pic2.jpg!bw700') ;
+    background-size: cover; /* Scales the image to cover the entire element */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+}
+.boxnav{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: center;
+
+}
+
+.boxnav  a{
+    text-decoration: none; /* Removes the underline from the links */
+    font-weight: bold; /* Makes the text bold */
+    color: white; /* Sets the link color to white */
+    margin-right: 50px;;
+}
+/* Add underline only to the Home link */
+.boxnav li:first-child a {
+    border-bottom: 10px solid yellow; /* Simulates underline with color */
+    padding-bottom: 2px; /* Adjust to position underline correctly */
+  }
+
+.boxnav a:hover{
+    color: black; /* Changes the link color on hover to black */
+    background-color: aqua;
+    transition: background-color 0.5s ease;
+    
+}
+.name {
+
+    margin-left: 50px; 
+    color: white;
+}
+.ic img{
+    margin-right: 50px;
+    color: white;
+    height: 30px;
+    width: 40px;
+}
+
+.para{
+    margin-top: 50px;
+    /* border: 2px solid black; */
+    height: 200px;
+    width: 350px;
+    margin-left: 50px;
+    font-size: 50px;
+    color: white;
+    display: flex;
+}
+.headline{
+ /* border: 2px solid black; */
+ height: 50px;
+ width: 600px;
+ margin-left: 50px;
+color: white;
+display: flex;
+}
+.Botton{
+    height: 50px;
+    width: 150px;
+    /* margin-left: 50px; */
+    color: rgb(6, 5, 5);
+    display: flex;
+    background-color: yellow;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: 20px;
+    border: none; /* Optional: Removes the default button border */
+    border-radius: 25px; /* Creates the oval shape */
+    font-size: 20px;
+}
+button:hover{
+    background-color: rgb(152, 200, 206);
+    color: rgb(13, 10, 10);
+    transition: background-color 0.5s ease;
+}
+
+
+.Intro{
+
+    margin-top: 20px;
+    /* border: 20px solid yellowgreen; */
+    /* height: 400px; */
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(140, 140, 157);
+    border-radius: 25px; /* Creates the oval shape */
+    border: none; /* Optional: Removes the default button border */
+   
+    
+}
+.Intro p{
+    margin-left: 20px;
+    font-size: 30px;
+    text-decoration:wavy;
+    font-style: italic;
+    opacity: 0;
+    transform: scale(0.5);
+    animation: popUp 1s forwards;
+    animation-delay: 0.5s; /* Delay the start of the animation by 1 second */
+}
+
+@keyframes popUp {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .Items {
+    margin-top: 1px;
+    /* height: 500px; */
+    height: auto;
+
+    /* width: 1850px; */
+    width: 100%;
+
+    display: flex; /* Enable Flexbox */
+    justify-content: space-around; /* Distribute items evenly */
+    align-items: center; /* Align items vertically in the center */
+    flex-wrap: wrap; /* Ensure items stay in one row */
+  
+}
+
+.item-img {
+    max-width: 100%; /* Ensure images scale within their container */
+    height: 400px; /* Maintain aspect ratio */
+    width: 100%; /*Adjust width so four images fit in one row*/
+    border-radius: 25px; /* Creates the oval shape */
+}
+
+.item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 23%; 
+    margin-bottom: 20px;
+}
+
+.price {
+    margin-top: 5px; /* Space between image and price */
+    font-size: 20px; /* Font size for the price */
+    color: black; /* Color of the price text */
+}
+.chairHeading p{
+
+    height: 100px;
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 80px;
+    text-decoration:underline;
+    font-style: italic;
+    color: chocolate;
+    justify-content: center;
+}
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 1024px) {
+    .item-container {
+        width: 45%; /* Two items per row on smaller screens */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 600px) {
+    .item-container {
+        width: 100%; /* Single item per row on mobile screens */
+    }
+
+    .chairHeading p {
+        font-size: 40px; /* Adjust heading font size on mobile */
+    }
+}
+
+
+  
+
